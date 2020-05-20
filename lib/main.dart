@@ -21,7 +21,7 @@ import 'package:flutter/services.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await DotEnv().load('.env');
+  await DotEnv().load('.env_qa');
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   runZonedGuarded<Future<void>>(() async => runApp(await customThemeApp()),
       (Object error, StackTrace stackTrace) async {
